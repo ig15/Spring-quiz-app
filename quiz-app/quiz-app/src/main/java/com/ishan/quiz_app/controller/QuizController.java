@@ -36,7 +36,7 @@ public class QuizController {
         if(response.size() == score.getBody() ) {
             System.out.println("Congrats you are a top scorer!");
         }
-        return new ResponseEntity<>(quizService.getScore(id, response), "Congrats you are a top scorer!", HttpStatus.OK);
+        return new ResponseEntity<>(score.getBody(), HttpStatus.OK);
     }
 
 
