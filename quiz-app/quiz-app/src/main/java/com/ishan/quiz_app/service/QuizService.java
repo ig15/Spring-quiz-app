@@ -69,12 +69,9 @@ public class QuizService {
         int score = 0;
 
         for(UserResponse ur: response){
-//            log.info("heloji");
-//            log.info(String.valueOf(getQuestionById(quizQuestions,ur.getId())));
 
             if(ur.getResponse().equals(getQuestionById(quizQuestions,ur.getId()).getAnswer())) {
                 score++;
-//              log.info(String.valueOf(ur.getResponse().equals(quizQuestions.get(id).getAnswer())));
 
             }
         }
